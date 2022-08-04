@@ -15,7 +15,7 @@ const About = () => {
     }, [])
     return (
         <>
-            <h2 className="head-text" style={{ marginTop: 40 }}>I Know That <span>Good Designes</span> means <span>Good Business</span></h2>
+            <h3 className="head-text" style={{ marginTop: 40 }}>I Know That <span>Good Designes</span> means <span>Good Projects</span> means <span>Good Business</span></h3>
             <div className="app__profiles">
                 {abouts.map((about, index) => (
                     <motion.div
