@@ -62,14 +62,6 @@
 .head-text span {
   color: var(--secondary-color);
 }
-.head-text-good {
-  font-size: 1.75rem;
-
-}
-
-.head-text-good span {
-  color: var(--secondary-color);
-}
 
 @media screen and (min-width: 2000px) {
   .head-text {
@@ -79,6 +71,30 @@
 
 @media screen and (max-width: 450px) {
   .head-text {
+    font-size: 2rem;
+  }
+}
+
+.head-text-good {
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+}
+
+.head-text-good span {
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 2000px) {
+  .head-text-good {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .head-text-good {
     font-size: 2rem;
   }
 }

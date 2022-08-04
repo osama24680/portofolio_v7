@@ -34,6 +34,7 @@ const Work = () => {
             setWorks(data)
             // setFilterWork(data)
             setFilterWork(data.filter(work => work.tags[0].includes("React.JS")))
+            console.log(data)
         })
     
     }, [])

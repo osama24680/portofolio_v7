@@ -6,7 +6,7 @@ import "./Navbar.scss"
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
-    const navElements = ["home",  "about", "work", "skills","contact",]
+    const navElements = ["home",  "about", "work","gallery", "skills","contact",]
     return (
         <nav className="app__navbar">
             <div className="app__navbar-logo">

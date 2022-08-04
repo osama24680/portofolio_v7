@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const navElements = ["home", "about", "work", "skills","testimonial", "contact",]
+const navElements = ["home", "about", "work","gallery", "skills","testimonial", "contact",]
 
 const NavigationDots = ({ active }) => {
     return (
