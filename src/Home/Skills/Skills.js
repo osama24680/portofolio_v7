@@ -7,6 +7,8 @@ import { urlFor, client } from "../../client"
 import ReactTooltip from "react-tooltip"
 import "./Skills.scss"
 
+let personalInfo = "hello Osama"
+
 const Skills = () => {
     const [experiences, setExperiences] = useState([]);
     const [skills, setSkills] = useState([]);
@@ -16,7 +18,7 @@ const Skills = () => {
         setToolTip(false);
         setTimeout(() => setToolTip(true), 50);
     }
- 
+
 
     useEffect(() => {
         const query = '*[_type == "experiences"]';
@@ -64,7 +66,7 @@ const Skills = () => {
                                 <p className="bold-text">{experience.year}</p>
                             </div>
                             <motion.div className="app__skills-exp-works">
-                                {experience.works.map((work,index) => (
+                                {experience.works.map((work, index) => (
                                     <>
                                         <motion.div
                                             whileInView={{ opacity: [0, 1] }}
@@ -80,7 +82,7 @@ const Skills = () => {
                                             </div>
                                         </motion.div>
                                         {toolTip &&
-                                            <ReactTooltip
+                                            <ReactTooltip 
                                                 id={work.name}
                                                 effect="solid"
                                                 arrowColor="#fff"

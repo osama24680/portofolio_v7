@@ -148,11 +148,11 @@
 }
 
 .skills-tooltip {
-  max-width: 1300px !important;
-  background-color: red !important;
+  max-width: 60% !important;
+  background-color: var(--primary-color) !important;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
   border-radius: 5px !important;
-  padding: 10rem !important;
+  padding: 1rem !important;
   color: var(--gray-color) !important;
   text-align: center !important;
   line-height: 1.5 !important;
