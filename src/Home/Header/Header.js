@@ -46,8 +46,13 @@ const Header = () => {
                 className="app__header-info"
 
             >
+
+
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
                 <div className="app__header-badge">
-                    <div v className="badge-cmp app__flex" data-tip="" onMouseLeave={handleLeave} data-for="test">
+                    <div className="badge-cmp app__flex" data-tip={personalInfo} onMouseLeave={handleLeave} data-for="test">
                         <span>👋</span>
                         <div style={{ marginLeft: 20 }} >
                             <p className="p-text">Hello, I am</p>
@@ -59,16 +64,25 @@ const Header = () => {
                             effect="solid"
                             arrowColor="#fff"
                             className="skills-tooltip"
-                            id="test"
-                        >
-                            {personalInfo}
-                        </ReactTooltip>}
+                            id="test" />}
+                        
+                            {/* {personalInfo}
+                        </ReactTooltip>} */}
                     <div className="tag-cmp app-flex">
                         <p className="p-text" style={{ fontWeight: "bold" }}>Web Developer</p>
                         <p className="p-text" style={{ fontWeight: "bold" }}>Graphic Designer</p>
                     </div>
                 </div>
             </motion.div>
+
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
+
+
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
             <motion.div
                 onMouseLeave={handleLeave}
                 whileInView={{ opacity: [0, 1] }}
@@ -97,6 +111,10 @@ const Header = () => {
 
             </motion.div>
 
+
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
+            {/* **************************************************************** */}
 
             <motion.div
                 variant={scaleVariants}

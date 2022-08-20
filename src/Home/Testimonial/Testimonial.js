@@ -22,14 +22,12 @@ const Testimonial = () => {
 
         client.fetch(queryTestimonials).then((data) => {
             setTestimonials(data);
-            console.log(data)
         });
 
         client.fetch(brandsQuery).then((data) => {
             setBrands(data);
         });
     }, []);
-    console.log(brands)
     let element = testimonials[currentIndex]
     return (
         <>
