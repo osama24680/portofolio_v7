@@ -1,9 +1,14 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
+  width: 100% !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--backgroundColor);
 }
 
 #home .app__wrapper {
@@ -68,7 +73,7 @@
 .app__header-badge .badge-cmp,
 .app__header-badge .tag-cmp {
   padding: 1rem 2rem;
-  background: var(--white-color);
+  background: var(--secondary-color);
   border-radius: 15px;
   flex-direction: row;
   width: auto;
@@ -117,7 +122,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: var(--white-color);
+  background: var(--secondary-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 

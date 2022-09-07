@@ -3,18 +3,22 @@ import { About, Footer, Header, Skills, Testimonial, Work, Gallery } from './Hom
 import { Navbar, Technologies } from './Components';
 import './App.scss';
 
-const App = () => (
-  <div className="app">
-    {/* <Technologies />   */}
-    <Navbar />
-    <Header />
-    <About />
-    <Work />
-    <Gallery />
-    <Skills />
-    <Testimonial />
-    <Footer />
-  </div>
-);
+const App = () => {
+  return (
+    <div className="app">
+
+      <Navbar />
+      <Header />
+      <About />
+      <Work />
+      <Gallery />
+      <Skills />
+      <Testimonial />
+      <Footer />
+    </div>
+  )
+}
+
+
 
 export default App;

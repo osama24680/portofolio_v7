@@ -12,19 +12,20 @@ import node from '../assets/node.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
+import nextjs from "../assets/next.png"
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
-import profile from '../assets/profile.png';
 import profile1 from '../assets/profile1.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
-
+import circle2 from "../assets/circle2.png"
 
 export default {
+    
     email,
     mobile,
     api,
@@ -46,4 +47,6 @@ export default {
     circle,
     logo,
     profile1,
+    nextjs,
+    circle2,
 };

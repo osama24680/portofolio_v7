@@ -3,12 +3,31 @@
 :root {
   --font-base: "DM Sans", sans-serif;
   --primary-color: #edf2f8;
-  --secondary-color: #313bac;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  
+
+  --backgroundColor:#162d53;
+  --btnBackground:#132347;
+  --primaryColor:#7865FF;
+  --secondary-color: #313bac;
+  --gray-color: #d7e6ff;
+  --whiteColor:#fefeff;
+  --darkNav:#1179ed2b;
+  --black:#000;
+  --blackTech:#000;
+  --secondary-color-footer:#313bac;
+  --backgroundTable:#132347;
+  --primaryColorTable:#7865FF;
+  
+
+  
+ 
+  --lightPrimaryColor:#162032;
+  --purpleColor:#9C27B0;
+  --primaryHover:#013876;
 }
 
 * {
@@ -16,5 +35,12 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  transition:.4s;
+  transition: .4s;
 }
+
+
+
+
+
+
+

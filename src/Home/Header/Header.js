@@ -28,9 +28,8 @@ department , it's the second year to me at the college. I was so interested abou
 specially the front-end career so I started to learn it for over than a year and I have accomplished 
 many websites which are real and virtual and I am so excited to start work with you`
 
-let experience = [images.redux, images.react, images.sass]
-const Header = () => {
-
+let experience = [images.redux, images.react, images.nextjs]
+const Header = ({ isDark }) => {
     const [toolTip, setToolTip] = useState(true);
 
     const handleLeave = () => {
@@ -39,7 +38,8 @@ const Header = () => {
     }
 
     return (
-        <div className="app__header app__flex">
+
+        <div className="app__header app__flex" >
             <motion.div
                 whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                 transition={{ duration: .5 }}
@@ -48,9 +48,9 @@ const Header = () => {
             >
 
 
-            {/* **************************************************************** */}
-            {/* **************************************************************** */}
-            {/* **************************************************************** */}
+                {/* **************************************************************** */}
+                {/* **************************************************************** */}
+                {/* **************************************************************** */}
                 <div className="app__header-badge">
                     <div className="badge-cmp app__flex" data-tip={personalInfo} onMouseLeave={handleLeave} data-for="test">
                         <span>👋</span>
@@ -65,8 +65,8 @@ const Header = () => {
                             arrowColor="#fff"
                             className="skills-tooltip"
                             id="test" />}
-                        
-                            {/* {personalInfo}
+
+                    {/* {personalInfo}
                         </ReactTooltip>} */}
                     <div className="tag-cmp app-flex">
                         <p className="p-text" style={{ fontWeight: "bold" }}>Web Developer</p>
@@ -79,10 +79,6 @@ const Header = () => {
             {/* **************************************************************** */}
             {/* **************************************************************** */}
 
-
-            {/* **************************************************************** */}
-            {/* **************************************************************** */}
-            {/* **************************************************************** */}
             <motion.div
                 onMouseLeave={handleLeave}
                 whileInView={{ opacity: [0, 1] }}
@@ -95,7 +91,7 @@ const Header = () => {
                 <motion.img
                     whileInView={{ scale: [0, 1] }}
                     transition={{ duration: .5, ease: "easeInOut" }}
-                    src={images.circle}
+                    src={isDark ? images.circle2 : images.circle}
                     alt="cx"
                     className="overlay_circle"
                 />
@@ -130,6 +126,8 @@ const Header = () => {
 
             </motion.div>
         </div>
+
+
     )
 }
 

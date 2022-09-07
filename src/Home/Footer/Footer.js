@@ -43,12 +43,13 @@ const Footer = () => {
                     <a href="mailto:osamamegahed2468@gmail.com" className="p-text">osamamegahed2468@gmail.com</a>
                 </div>
 
-
                 <div className="app__footer-card">
                     <img src={images.mobile} alt="" />
                     <a href="tel:+201127796848" className="p-text">+201127796848</a>
                 </div>
             </div>
+
+            
             {!isFormSubmitted ? <div className="app__footer-form app__flex">
                 <div className="app__flex">
                     <input className="p-text" type="text" placeholder="Your Name" value={name} onChange={handleChangeInput} name="name" />

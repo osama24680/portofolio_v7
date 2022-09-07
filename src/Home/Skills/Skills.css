@@ -46,7 +46,7 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: #fef4f5;
+  background-color: var(--secondary-color);
 }
 
 .app__skills-item div img {
@@ -55,7 +55,7 @@
 }
 
 .app__skills-item div:hover {
-  box-shadow: 0 0 15px #676ebe;
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 2000px) {
@@ -124,6 +124,7 @@
 
 .app__skills-exp-works .app__skills-exp-work h4 {
   font-weight: 500;
+  color: var(--primaryColor);
 }
 
 .app__skills-exp-works .app__skills-exp-work p {
@@ -138,7 +139,7 @@
 
 .app__skills-exp-year p {
   font-weight: 800;
-  color: var(--secondary-color);
+  color: var(--primaryColor);
 }
 
 @media screen and (max-width: 450px) {
@@ -149,7 +150,7 @@
 
 .skills-tooltip {
   max-width: 60% !important;
-  background-color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
   border-radius: 5px !important;
   padding: 1rem !important;

@@ -29,34 +29,37 @@ const Skills = () => {
 
         client.fetch(skillsQuery).then((data) => {
             setSkills(data);
+            console.log(data)
         });
     }, []);
 
     return (
         <>
             <h2 className="head-text">Skills & Experiences</h2>
-
             <div className="app__skills-container">
                 <motion.div className="app__skills-list">
-                    {skills.map((skill,index) => (
+                    {skills.map((skill, index) => (
                         <motion.div
                             whileInView={{ opacity: [0, 1] }}
                             transition={{ duration: 0.5 }}
                             className="app__skills-item app__flex"
                             key={index}
                         >
-                            <div
+                            <motion.div
+                                whileHover={{ boxShadow: `0 0 25px ${skill.bgColor}` }}
+                                transition={{ duration: 0.2 }}
                                 className="app__flex"
-                                style={{ backgroundColor: skill.bgColor }}
+                                style={{}}
                             >
                                 <img src={urlFor(skill.icon)} alt={skill.name} />
-                            </div>
+                            </motion.div>
                             <p className="p-text">{skill.name}</p>
                         </motion.div>
                     ))}
                 </motion.div>
+
                 <div className="app__skills-exp">
-                    {experiences.map((experience,index) => (
+                    {experiences.map((experience, index) => (
                         <motion.div
                             className="app__skills-exp-item"
                             key={index}
@@ -81,7 +84,7 @@ const Skills = () => {
                                             </div>
                                         </motion.div>
                                         {toolTip &&
-                                            <ReactTooltip 
+                                            <ReactTooltip
                                                 id={work.name}
                                                 effect="solid"
                                                 arrowColor="#fff"

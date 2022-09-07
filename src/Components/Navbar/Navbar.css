@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: var(--darkNav);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -61,7 +61,7 @@
 }
 
 .app__navbar-links li a:hover {
-  color: var(--secondary-color);
+  color: var(--primaryColor);
 }
 
 .app__navbar-links li:hover div {
@@ -82,7 +82,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
 }
 
 .app__navbar-menu svg {
@@ -104,8 +103,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  background: url("../../assets/bgWhite.png");
-  background-color: var(--white-color);
+  background: var(--darkNav);
   background-size: cover;
   background-repeat: repeat;
   box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);

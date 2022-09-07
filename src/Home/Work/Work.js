@@ -5,7 +5,7 @@ import AppWrap from '../../Wrapper/AppWrap'
 import MotionWrap from '../../Wrapper/MotionWrap'
 import { urlFor, client } from "../../client"
 import "./Work.scss"
-let categories = ["UI/UX", "JavaScript", "OOP", "jQuery", "React.JS", "TypeScript", "All"]
+let categories = ["UI/UX", "JavaScript", "OOP", "jQuery", "React.JS", "Next.JS", "All"]
 const Work = () => {
 
     const [works, setWorks] = useState([]);
@@ -39,7 +39,6 @@ const Work = () => {
     useEffect(() => {
         let query = "*[_type=='works']"
         client.fetch(query).then(data => {
-            // console.log((data))
             setWorks(data)
             setFilterWork(data.filter(work => work.tags[0].includes("React.JS")))
         })
@@ -117,6 +116,4 @@ const Work = () => {
         </>
     )
 }
-
-
 export default AppWrap(MotionWrap(Work, "app__works"), "work", "app__primarybg")

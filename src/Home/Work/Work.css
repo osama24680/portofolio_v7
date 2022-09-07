@@ -16,8 +16,8 @@
 .app__work-filter .app__work-filter-item {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--secondary-color);
+  color: var(--black);
   font-weight: 800;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -25,7 +25,7 @@
 }
 
 .app__work-filter .app__work-filter-item:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primaryColor);
   color: #fff;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .app__work-filter .item-active {
-  background-color: var(--secondary-color);
+  background-color: var(--primaryColor);
   color: #fff;
 }
 
@@ -54,7 +54,7 @@
   margin: 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   color: #000;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -152,21 +152,26 @@
   position: absolute;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   top: -25px;
+  color: var(--whiteColor);
 }
 
 .app__work-button {
   margin: 10px 0;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 2.5rem;
   border-radius: 0.5rem;
-  background-color: var(--secondary-color);
-  color: #fff !important;
+  background-color: var(--primaryColor);
+  color: var(--blackTech) !important;
   font-weight: 800;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0.5rem;
+  text-align: center;
   border: 2px solid var(--secondary-color);
+}
+
+.app__work-button p {
+  transform: translateY(8px);
 }
 
 .app__work-technologies {

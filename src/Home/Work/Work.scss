@@ -15,15 +15,16 @@
     .app__work-filter-item {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
-        color: #000;
+        background-color: var(--secondary-color);
+        color: var(--black);
         font-weight: 800;
         cursor: pointer;
         transition: all 0.3s ease;
         margin: 0.5rem;
 
         &:hover {
-            background-color: var(--secondary-color);
+            // background-color: var(--secondary-color);
+            background-color: var(--primaryColor);
             color: #fff;
         }
 
@@ -34,7 +35,8 @@
     }
 
     .item-active {
-        background-color: var(--secondary-color);
+
+        background-color: var(--primaryColor);
         color: #fff;
     }
 }
@@ -44,7 +46,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
 
     .app__work-item {
         width: 270px;
@@ -52,7 +54,7 @@
         margin: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
+        background-color: var(--secondary-color);
         color: #000;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -133,7 +135,6 @@
     h4 {
         margin-top: 1rem;
         line-height: 1.5;
-
         @media screen and (min-width: 2000px) {
             margin-top: 3rem;
         }
@@ -143,46 +144,49 @@
         position: absolute;
         padding: 0.5rem 1rem;
         border-radius: 10px;
-        background-color: #fff;
+        background-color: var(--secondary-color);
         top: -25px;
+        color: var(--whiteColor) ;
     }
 }
-.app__work-button{
+
+.app__work-button {
     margin: 10px 0;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 2.5rem;
     border-radius: 0.5rem;
-    background-color: var(--secondary-color);
-    color: #fff !important;
+    background-color: var(--primaryColor);
+    color: var(--blackTech) !important;
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0.5rem;
-    border:2px solid var(--secondary-color);
+    text-align: center;
 
-    // &:hover {
-    //     background-color: var(--secondary-color);
-    //     color: #fff;
-    // }
+    border: 2px solid var(--secondary-color);
+
+    p {
+        transform: translateY(8px);
+    }
 }
-.app__work-technologies{
-    // display: none !important;
-    // height:0;
-    // overflow: hidden;
-    // // padding: 20px 0;
+
+.app__work-technologies {
+
     flex-wrap: wrap;
-    img{
+
+    img {
         width: 50px;
         margin: 5px 10px;
     }
 }
-.showTech{
+
+.showTech {
     // display: flex !important;
     // height:100%;
     // overflow: hidden;
     // padding: 20px 0;
     flex-wrap: wrap;
-   margin: 10px 0;
-    img{
+    margin: 10px 0;
+
+    img {
         width: 50px;
         margin: 5px 10px;
     }
