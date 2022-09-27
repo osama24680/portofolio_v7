@@ -23,7 +23,7 @@ const About = () => {
                         <div className='about_btns d-flex align-items-center flex-column'>
                             <button onClick={() => setAboutFilter("hello")} className={`about_btn ${aboutFilter === "hello" && "about_btn_active "}`}>Hello</button>
                             <button onClick={() => setAboutFilter("about")} className={`about_btn ${aboutFilter === "about" && "about_btn_active "}`}>About Me</button>
-                            <button onClick={() => setAboutFilter("education")} className={`about_btn ${aboutFilter === "education" && "about_btn_active "}`}>Educatio</button>
+                            <button onClick={() => setAboutFilter("education")} className={`about_btn ${aboutFilter === "education" && "about_btn_active "}`}>Education</button>
                         </div>
                     </Col>
                     <Col lg="8" md="9" className='about_content_wrapper d-flex gap-5 '>

@@ -7,7 +7,7 @@ const SubAbout = () => {
             <div className="about_content ">
                 <h2>I'm Osama Megahed</h2>
                 <p className="p_about">
-                    a student at AAST, studying Engineering, Electronics and communication
+                    A student at AAST, studying Engineering, Electronics and communication
                     department , it's the third year to me at the college. I was so interested
                     about web development specially the front-end career so I started to learn
                     it for over than a year and I have accomplished many websites which are real

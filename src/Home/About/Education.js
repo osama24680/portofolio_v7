@@ -18,14 +18,6 @@ const Education = () => {
                     <td>AAST</td>
                     <td>2019 - 2024</td>
                 </tr>
-                <tr>
-                    <td>Web Developer</td>
-                    <td>Frront-end</td>
-                    <td>Online</td>
-                    <td>2021 - 2022</td>
-                </tr>
-            
-
             </tbody>
         </table>
     )

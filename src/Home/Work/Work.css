@@ -25,7 +25,7 @@
 }
 
 .app__work-filter .app__work-filter-item:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--navLinksColorDarkSocial);
   color: #fff;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .app__work-filter .item-active {
-  background-color: var(--primaryColor);
+  background-color: var(--navLinksColorDarkSocial);
   color: #fff;
 }
 
@@ -56,8 +56,8 @@
   border-radius: 0.5rem;
   background-color: var(--secondary-color);
   color: #000;
-  cursor: pointer;
   transition: all 0.3s ease;
+  min-height: 400px;
 }
 
 .app__work-portfolio .app__work-item:hover {
@@ -164,7 +164,6 @@
   background-color: var(--primaryColor);
   color: var(--blackTech) !important;
   font-weight: 800;
-  cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
   border: 2px solid var(--secondary-color);

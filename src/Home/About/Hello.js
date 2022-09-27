@@ -8,11 +8,12 @@ const Hello = () => {
             <div className="about_content ">
                 <h2>Nice 2 meet u</h2>
                 <p className="p_about">
-                    Hello, it's Osama, a Front-end web developer for over
-                    than a year, I have developed so many amazing websites and wepApps, would be an
-                    exellent choice to your organisation or your project cause I can make all your ideas come to the real world, In addition to my knowledge base, I actively
-                    seek out new technologies and stay up-to-date on the industry trends and advancements.
-                    I can be reached anytime
+                    Hello, it's Osama, a Front-end developer for over than a year,
+                    I have developed many websites and web Apps, would be an excellent
+                    choice for your organization or project, I can make all your
+                    ideas come to the real world, In addition to my knowledge bases,
+                    I actively seek out new technologies and stay up-to-date on the
+                    industry trends and advancements. I can be reached anytime.
                 </p>
 
             </div>

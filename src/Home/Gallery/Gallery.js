@@ -16,13 +16,6 @@ const Gallery = () => {
 
 
     const showHideSites = (e) => {
-        // console.log(e)
-        // console.log(gallerySection.current)
-        // let headGallery=document.getElementById("headGallery")
-        // console.log(headGallery)
-        // let rect = headGallery.getBoundingClientRect();
-        // console.log(rect)
-
         if (word === "More Images...") {
             setIsShow(true)
             setWord("Hide Images")

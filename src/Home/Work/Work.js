@@ -103,8 +103,8 @@ const Work = () => {
                         </div>
                         {/* <div className={show ? "showTech" : "app__work-technologies  "}> */}
                         <div className="app__work-technologies  showTech app__flex">
-                            {work.technologies.map(item => (
-                                <img src={urlFor(item)} alt="" />
+                            {work.technologies.map((item,index) => (
+                                <img src={urlFor(item)} alt="" key={index} />
                             ))}
                         </div>
                     </div>

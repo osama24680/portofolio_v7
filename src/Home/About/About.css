@@ -23,8 +23,8 @@
 .about_content .p_about {
   line-height: 30px;
   font-weight: 600;
-  color: var(--gray-color);
-  font-size: 1.1rem;
+  color: #868686 !important;
+  font-size: 1rem;
 }
 
 .about_btns {
@@ -41,11 +41,10 @@
   color: var(--whiteColor);
   background: transparent;
   border-bottom: 1px solid #7865ff;
-  border-radius: 5px;
 }
 
 .about_btn_active {
-  background-color: var(--primaryColorTable);
+  background-color: var(--navLinksColorDarkSocial);
 }
 
 .social_links h6 {

@@ -23,6 +23,7 @@ import profile1 from '../assets/profile1.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import circle2 from "../assets/circle2.png"
+import circle3 from "../assets/circle3.png"
 
 export default {
     
@@ -49,4 +50,5 @@ export default {
     profile1,
     nextjs,
     circle2,
+    circle3
 };

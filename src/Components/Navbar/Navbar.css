@@ -7,7 +7,7 @@
   background: var(--darkNav);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid var(--borderDarkNav);
   position: fixed;
   z-index: 2;
 }
@@ -52,12 +52,13 @@
 }
 
 .app__navbar-links li a {
-  color: var(--gray-color);
+  color: var(--navLinksColorDark);
   text-decoration: none;
   flex-direction: column;
   text-transform: uppercase;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+  font-size: .9rem;
 }
 
 .app__navbar-links li a:hover {
@@ -65,7 +66,7 @@
 }
 
 .app__navbar-links li:hover div {
-  background: var(--secondary-color);
+  background: var(--primaryColor);
 }
 
 @media screen and (max-width: 900px) {

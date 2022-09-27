@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { BsInstagram, BsSun } from "react-icons/bs"
 import { FaFacebook } from "react-icons/fa"
 import { MdOutlineNightlight } from "react-icons/md"
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai"
 
-
-
 const NavigationDots = ({ isDark }) => {
 
-    
-  
+    useEffect(() => {
+        console.log(isDark)
+    }, [isDark])
+
     function handleSystem() {
 
         let is_copy_dark = !isDark
         if (is_copy_dark) {
             return
         } else {
-            
+
             document.documentElement.style.setProperty('--backgroundColor', '#EDF2F8')
             document.documentElement.style.setProperty('--secondary-color', '#fff')
             document.documentElement.style.setProperty('--primaryColor', '#313BAC')
@@ -26,6 +26,12 @@ const NavigationDots = ({ isDark }) => {
             document.documentElement.style.setProperty('--secondary-color-footer', '#313BAC')
             document.documentElement.style.setProperty('--backgroundTable', '#fff')
             document.documentElement.style.setProperty('--primaryColorTable', '#e4e4e4')
+            document.documentElement.style.setProperty('--darkNav', '#ffffff4a')
+            document.documentElement.style.setProperty('--borderDarkNav', '#a2bfce')
+            document.documentElement.style.setProperty('--navLinksColorDark', '#3AA6EF')
+            document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#3AA6EF')
+            document.documentElement.style.setProperty('--circleImage', 'image3')
+
         }
     }
 
@@ -42,7 +48,12 @@ const NavigationDots = ({ isDark }) => {
             document.documentElement.style.setProperty('--secondary-color-footer', '#313bac')
             document.documentElement.style.setProperty('--backgroundTable', '#132347')
             document.documentElement.style.setProperty('--primaryColorTable', '#7865FF')
+            document.documentElement.style.setProperty('--darkNav', 'transparent')
+            document.documentElement.style.setProperty('--borderDarkNav', 'rgba(255, 255, 255, 0.18)')
+            document.documentElement.style.setProperty('--navLinksColorDark', '#d7e6ff')
+            document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#7865FF')
             
+
         }
     }
     return (

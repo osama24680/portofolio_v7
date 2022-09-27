@@ -54,13 +54,10 @@
         font-size: 2.75rem;
         font-weight: 800;
         text-align: center;
-        color: var(--primaryColor);
+        color: var(--navLinksColorDarkSocial);
         text-transform: capitalize;
 
-        span {
-            color: var(--primaryColor);
-        }
-
+      
         @media screen and (min-width: 2000px) {
             font-size: 4rem;
         }
@@ -127,7 +124,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: var(--primaryColor);
+            background-color: var(--navLinksColorDarkSocial);
             margin: 0.25rem 0;
             display: flex;
             justify-content: center;

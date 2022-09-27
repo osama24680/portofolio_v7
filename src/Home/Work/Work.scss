@@ -23,8 +23,7 @@
         margin: 0.5rem;
 
         &:hover {
-            // background-color: var(--secondary-color);
-            background-color: var(--primaryColor);
+            background-color: var(--navLinksColorDarkSocial);
             color: #fff;
         }
 
@@ -36,7 +35,7 @@
 
     .item-active {
 
-        background-color: var(--primaryColor);
+        background-color: var(--navLinksColorDarkSocial);
         color: #fff;
     }
 }
@@ -56,9 +55,8 @@
         border-radius: 0.5rem;
         background-color: var(--secondary-color);
         color: #000;
-        cursor: pointer;
         transition: all 0.3s ease;
-
+        min-height: 400px;
         &:hover {
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
         }
@@ -157,7 +155,6 @@
     background-color: var(--primaryColor);
     color: var(--blackTech) !important;
     font-weight: 800;
-    cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
 

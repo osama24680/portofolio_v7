@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Header.scss"
 import { motion } from "framer-motion"
 import { images } from "../../Data"
@@ -17,11 +17,11 @@ let scaleVariants = {
     }
 }
 
-const professionalInfo = `Hello, it's Osama Megahed, a Front-end web developer for over 
-than a year, I have developed many many amazing websites and wepapps, would be an 
-exellent addition to your organisation, In addition to my knowledge base, I actively 
-seek out new technologies and stay up-to-date on the industry trends and advancements.
-I can be reached anytime`
+const professionalInfo = `Hello, it's Osama, a Front-end developer for over than a year, I have 
+developed many websites and web Apps, would be an excellent choice for your organization or project, 
+I can make all your ideas come to the real world, In addition to my knowledge bases, I actively seek 
+out new technologies and stay up-to-date on the industry trends and advancements. I can be reached 
+anytime.`
 
 let personalInfo = `I'm a student at AAST, I study Engineering, Electronics and communication 
 department , it's the second year to me at the college. I was so interested about web development 
@@ -36,6 +36,9 @@ const Header = ({ isDark }) => {
         setToolTip(false);
         setTimeout(() => setToolTip(true), 50);
     }
+    useEffect(() => {
+        console.log(isDark)
+    }, [isDark])
 
     return (
 
@@ -66,11 +69,10 @@ const Header = ({ isDark }) => {
                             className="skills-tooltip"
                             id="test" />}
 
-                    {/* {personalInfo}
-                        </ReactTooltip>} */}
+
                     <div className="tag-cmp app-flex">
-                        <p className="p-text" style={{ fontWeight: "bold" }}>Web Developer</p>
-                        <p className="p-text" style={{ fontWeight: "bold" }}>Graphic Designer</p>
+                        <p className="" style={{ fontWeight: "bold" }}>Web Developer</p>
+                        <p className="" style={{ fontWeight: "bold" }}>Graphic Designer</p>
                     </div>
                 </div>
             </motion.div>
@@ -88,11 +90,19 @@ const Header = ({ isDark }) => {
             >
                 <img src={images.profile1} alt="" className="app__header-img-class" />
 
-                <motion.img
+                {/* <motion.img
                     whileInView={{ scale: [0, 1] }}
                     transition={{ duration: .5, ease: "easeInOut" }}
-                    src={isDark ? images.circle2 : images.circle}
+                    src={`${isDark ? images.circle2 : images.circle3}`}
                     alt="cx"
+                    className="overlay_circle"
+                /> */}
+
+                <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    transition={{ duration: .5, ease: "easeInOut" }}
+                    // src={`${isDark ? images.circle2 : images.circle3}`}
+                    // alt="cx"
                     className="overlay_circle"
                 />
 

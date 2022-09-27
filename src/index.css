@@ -7,27 +7,28 @@
   --lightGray-color: #e4e4e4;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  
+  --circlNavDark: "";
 
-  --backgroundColor:#162d53;
-  --btnBackground:#132347;
-  --primaryColor:#7865FF;
+  --backgroundColor: #162d53;
+  --btnBackground: #132347;
+  --primaryColor: #7865FF;
   --secondary-color: #313bac;
   --gray-color: #d7e6ff;
-  --whiteColor:#fefeff;
-  --darkNav:#1179ed2b;
-  --black:#000;
-  --blackTech:#000;
-  --secondary-color-footer:#313bac;
-  --backgroundTable:#132347;
-  --primaryColorTable:#7865FF;
-  
+  --whiteColor: #fefeff;
+  --darkNav: transparent;
+  --borderDarkNav: rgba(255, 255, 255, 0.18);
+  --black: #000;
+  --blackTech: #000;
+  --secondary-color-footer: #313bac;
+  --backgroundTable: #132347;
+  --primaryColorTable: #7865FF;
+  --navLinksColorDark: #d7e6ff;
+  --navLinksColorDarkSocial: #d7e6ff;
 
-  
- 
-  --lightPrimaryColor:#162032;
-  --purpleColor:#9C27B0;
-  --primaryHover:#013876;
+
+  --lightPrimaryColor: #162032;
+  --purpleColor: #9C27B0;
+  --primaryHover: #013876;
 }
 
 * {
@@ -37,10 +38,3 @@
   scroll-behavior: smooth;
   transition: .4s;
 }
-
-
-
-
-
-
-
