@@ -11,7 +11,7 @@ th,td{
     font-size:1rem !important
 }
 thead{
-    background:var(--navLinksColorDarkSocial) !important;
+    background-color: var(--tableBackgroundDark) !important;
     color:var(--whiteColor)
 }
 td{

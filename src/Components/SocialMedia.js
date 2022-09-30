@@ -5,13 +5,7 @@ import { MdOutlineNightlight } from "react-icons/md"
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai"
 
 const NavigationDots = ({ isDark }) => {
-
-    useEffect(() => {
-        console.log(isDark)
-    }, [isDark])
-
     function handleSystem() {
-
         let is_copy_dark = !isDark
         if (is_copy_dark) {
             return
@@ -30,7 +24,14 @@ const NavigationDots = ({ isDark }) => {
             document.documentElement.style.setProperty('--borderDarkNav', '#a2bfce')
             document.documentElement.style.setProperty('--navLinksColorDark', '#3AA6EF')
             document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#3AA6EF')
-            document.documentElement.style.setProperty('--circleImage', 'image3')
+            document.documentElement.style.setProperty('--DesignerTextDark', '#3AA6EF')
+            document.documentElement.style.setProperty('--tableBackgroundDark', '#3AA6EF')
+            document.documentElement.style.setProperty('--itemsFilteredColor', '#fff')
+            document.documentElement.style.setProperty('--itemsFilteredColorHover', '#3AA6EF')
+
+
+
+
 
         }
     }
@@ -51,7 +52,11 @@ const NavigationDots = ({ isDark }) => {
             document.documentElement.style.setProperty('--darkNav', 'transparent')
             document.documentElement.style.setProperty('--borderDarkNav', 'rgba(255, 255, 255, 0.18)')
             document.documentElement.style.setProperty('--navLinksColorDark', '#d7e6ff')
-            document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#7865FF')
+            document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#d7e6ff')
+            document.documentElement.style.setProperty('--DesignerTextDark', '#7865FF')
+            document.documentElement.style.setProperty('--tableBackgroundDark', '#7865FF')
+            document.documentElement.style.setProperty('--itemsFilteredColor', '#313bac')
+            document.documentElement.style.setProperty('--itemsFilteredColorHover', '#7865FF')
             
 
         }

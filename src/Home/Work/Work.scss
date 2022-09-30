@@ -15,7 +15,7 @@
     .app__work-filter-item {
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        background-color: var(--secondary-color);
+        background-color: var(--itemsFilteredColor);
         color: var(--black);
         font-weight: 800;
         cursor: pointer;
@@ -23,7 +23,7 @@
         margin: 0.5rem;
 
         &:hover {
-            background-color: var(--navLinksColorDarkSocial);
+            background-color: var(--itemsFilteredColorHover);
             color: #fff;
         }
 
@@ -35,7 +35,7 @@
 
     .item-active {
 
-        background-color: var(--navLinksColorDarkSocial);
+        background-color: var(--itemsFilteredColorHover);
         color: #fff;
     }
 }
