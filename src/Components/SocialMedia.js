@@ -4,6 +4,43 @@ import { FaFacebook } from "react-icons/fa"
 import { MdOutlineNightlight } from "react-icons/md"
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai"
 
+const darkMode = [
+    { name: "--backgroundColor", code: "#162d53" },
+    { name: "--secondary-color", code: "#313bac" },
+    { name: "--primaryColor", code: "#7865FF" },
+    { name: "--gray-color", code: "#d7e6ff" },
+    { name: "--blackTech", code: "#000" },
+    { name: "--whiteColor", code: "#fefeff" },
+    { name: "--secondary-color-footer", code: "#313bac" },
+    { name: "--backgroundTable", code: "#132347" },
+    { name: "--darkNav", code: "transparent" },
+    { name: "--borderDarkNav", code: "rgba(255, 255, 255, 0.18)" },
+    { name: "--navLinksColorDark", code: "#d7e6ff" },
+    { name: "--navLinksColorDarkSocial", code: "#d7e6ff" },
+    { name: "--DesignerTextDark", code: "#7865FF" },
+    { name: "--tableBackgroundDark", code: "#7865FF" },
+    { name: "--itemsFilteredColor", code: "#313bac" },
+    { name: "--itemsFilteredColorHover", code: "#7865FF" },
+]
+const lightMode = [
+    { name: "--backgroundColor", code: "#EDF2F8" },
+    { name: "--secondary-color", code: "#fff" },
+    { name: "--primaryColor", code: "#313BAC" },
+    { name: "--gray-color", code: "#000" },
+    { name: "--blackTech", code: "#fff" },
+    { name: "--whiteColor", code: "#000" },
+    { name: "--secondary-color-footer", code: "#313BAC" },
+    { name: "--backgroundTable", code: "#fff" },
+    { name: "--primaryColorTable", code: "#e4e4e4" },
+    { name: "--darkNav", code: "#ffffff4a" },
+    { name: "--borderDarkNav", code: "#a2bfce" },
+    { name: "--navLinksColorDark", code: "#3AA6EF" },
+    { name: "--navLinksColorDarkSocial", code: "#3AA6EF" },
+    { name: "--DesignerTextDark", code: "#3AA6EF" },
+    { name: "--tableBackgroundDark", code: "#3AA6EF" },
+    { name: "--itemsFilteredColor", code: "#fff" },
+    { name: "--itemsFilteredColorHover", code: "#3AA6EF" },
+]
 
 const NavigationDots = ({ isDark }) => {
     const [Dark, setDark] = useState(true)
@@ -12,43 +49,14 @@ const NavigationDots = ({ isDark }) => {
         setDark(darkCopy)
     }
     function handleDrakMode() {
-
         if (Dark) {
-            document.documentElement.style.setProperty('--backgroundColor', '#162d53')
-            document.documentElement.style.setProperty('--secondary-color', '#313bac')
-            document.documentElement.style.setProperty('--primaryColor', '#7865FF')
-            document.documentElement.style.setProperty('--gray-color', '#d7e6ff')
-            document.documentElement.style.setProperty('--blackTech', '#000')
-            document.documentElement.style.setProperty('--whiteColor', '#fefeff')
-            document.documentElement.style.setProperty('--secondary-color-footer', '#313bac')
-            document.documentElement.style.setProperty('--backgroundTable', '#132347')
-            document.documentElement.style.setProperty('--primaryColorTable', '#7865FF')
-            document.documentElement.style.setProperty('--darkNav', 'transparent')
-            document.documentElement.style.setProperty('--borderDarkNav', 'rgba(255, 255, 255, 0.18)')
-            document.documentElement.style.setProperty('--navLinksColorDark', '#d7e6ff')
-            document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#d7e6ff')
-            document.documentElement.style.setProperty('--DesignerTextDark', '#7865FF')
-            document.documentElement.style.setProperty('--tableBackgroundDark', '#7865FF')
-            document.documentElement.style.setProperty('--itemsFilteredColor', '#313bac')
-            document.documentElement.style.setProperty('--itemsFilteredColorHover', '#7865FF')
+            for (let i of darkMode) {
+                document.documentElement.style.setProperty(i.name, i.code)
+            }
         } else {
-            document.documentElement.style.setProperty('--backgroundColor', '#EDF2F8')
-            document.documentElement.style.setProperty('--secondary-color', '#fff')
-            document.documentElement.style.setProperty('--primaryColor', '#313BAC')
-            document.documentElement.style.setProperty('--gray-color', '#000')
-            document.documentElement.style.setProperty('--blackTech', '#fff')
-            document.documentElement.style.setProperty('--whiteColor', '#000')
-            document.documentElement.style.setProperty('--secondary-color-footer', '#313BAC')
-            document.documentElement.style.setProperty('--backgroundTable', '#fff')
-            document.documentElement.style.setProperty('--primaryColorTable', '#e4e4e4')
-            document.documentElement.style.setProperty('--darkNav', '#ffffff4a')
-            document.documentElement.style.setProperty('--borderDarkNav', '#a2bfce')
-            document.documentElement.style.setProperty('--navLinksColorDark', '#3AA6EF')
-            document.documentElement.style.setProperty('--navLinksColorDarkSocial', '#3AA6EF')
-            document.documentElement.style.setProperty('--DesignerTextDark', '#3AA6EF')
-            document.documentElement.style.setProperty('--tableBackgroundDark', '#3AA6EF')
-            document.documentElement.style.setProperty('--itemsFilteredColor', '#fff')
-            document.documentElement.style.setProperty('--itemsFilteredColorHover', '#3AA6EF')
+            for (let i of lightMode) {
+                document.documentElement.style.setProperty(i.name, i.code)
+            }
         }
     }
     useEffect(() => {
@@ -59,10 +67,10 @@ const NavigationDots = ({ isDark }) => {
         <div className="app__social">
 
             <div className="system__icon system_sun" onClick={handleDarkModeButton}>
-                <button href="#" target="_blank" rel="noopener noreferrer" >{Dark ? <BsSun />  : <MdOutlineNightlight />}  </button>
+                <button href="#" target="_blank" rel="noopener noreferrer" >{Dark ? <BsSun /> : <MdOutlineNightlight />}  </button>
             </div>
             <div className="linkedin__icon">
-                <a href="https://www.linkedin.com/in/osama-meaghed-58763022a/" target="_blank" rel="noopener noreferrer" ><AiFillLinkedin /></a>
+                <a href="https://www.linkedin.com/in/osama-megahed-887b76201/" target="_blank" rel="noopener noreferrer" ><AiFillLinkedin /></a>
             </div>
             <div className="github__icon">
                 <a href="https://github.com/osama24680" target="_blank" rel="noopener noreferrer"><AiOutlineGithub /></a>

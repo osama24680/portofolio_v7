@@ -25,6 +25,8 @@ import bird from "../assets/designes/bird.png"
 import amir from "../assets/designes/amir.jpg"
 import like_girl from "../assets/designes/like_girl.jpg"
 import girl_in_street from "../assets/designes/girl_in_street.jpg"
+import Angel_girl from "../assets/designes/Angel_girl.png"
+import raven from "../assets/designes/Raven.png"
 
 const DesignesData =[
     {img:spaceGirl,  name: "spaceGirl"},
@@ -54,6 +56,8 @@ const DesignesData =[
     {img:like_girl, class: "hide ",name: "like_girl"},
     {img:amir, class: "hide ",name: "amir"},
     {img:girl_in_street, class: "hide ",name: "girl_in_street"},
+    {img:Angel_girl, class: "hide ",name: "Angel_girl"},
+    {img:raven, class: "hide ",name: "raven"},
 ]
 export default DesignesData
 
