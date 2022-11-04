@@ -4,9 +4,9 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi"
 import AppWrap from '../../Wrapper/AppWrap'
 import MotionWrap from '../../Wrapper/MotionWrap'
 import { urlFor, client } from "../../client"
-import ReactTooltip from "react-tooltip"
 import "./Testimonial.scss"
 
+let clients = [{ id: 1, client: "Yasmine Mokhtar", platform: "Upwork" }]
 const Testimonial = () => {
 
     const [testimonials, setTestimonials] = useState([]);
@@ -39,7 +39,7 @@ const Testimonial = () => {
                             <p className="p-text">{element.feedback}</p>
                             <div>
                                 <h4 className="bold-text">{element.name}</h4>
-                                <h5 className="p-text">{element.company}</h5>
+                                <h5 className=""><a href={element.review_link}>{element.platform}</a></h5>
                             </div>
                         </div>
                     </div>
