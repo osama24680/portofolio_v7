@@ -39,7 +39,7 @@ const Testimonial = () => {
                             <p className="p-text">{element.feedback}</p>
                             <div>
                                 <h4 className="bold-text">{element.name}</h4>
-                                <h5 className=""><a href={element.review_link}>{element.platform}</a></h5>
+                                <h5 className=""><a href={element.review_link}>`"${element.platform}"`</a></h5>
                             </div>
                         </div>
                     </div>
