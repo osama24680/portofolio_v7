@@ -28,7 +28,9 @@ department , it's the second year to me at the college. I was so interested abou
 specially the front-end career so I started to learn it for over than a year and I have accomplished 
 many websites which are real and virtual and I am so excited to start work with you`
 
-let experience = [images.redux, images.react, images.nextjs]
+let experienceLeftSide = [images.typescript, images.firebase, images.sass]
+let experience = [images.nextjs,images.react, images.graphql,  images.redux]
+
 const Header = ({ isDark }) => {
     const [toolTip, setToolTip] = useState(true);
 
@@ -43,22 +45,18 @@ const Header = ({ isDark }) => {
     return (
 
         <div className="app__header app__flex" >
+
+
             <motion.div
                 whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                 transition={{ duration: .5 }}
                 className="app__header-info"
-
             >
-
-
-                {/* **************************************************************** */}
-                {/* **************************************************************** */}
-                {/* **************************************************************** */}
                 <div className="app__header-badge">
                     <div className="badge-cmp app__flex" data-tip={personalInfo} onMouseLeave={handleLeave} data-for="test">
                         <span>👋</span>
                         <div style={{ marginLeft: 20 }} >
-                            <p className="p-text">Hello, I am</p>
+                            <h2 className="p-text">Hi, I am</h2>
                             <h1 className="head-text">Osama</h1>
                         </div>
                     </div>
@@ -75,11 +73,23 @@ const Header = ({ isDark }) => {
                         <p className="" style={{ fontWeight: "bold" }}>Graphic Designer</p>
                     </div>
                 </div>
+
+
+                <motion.div
+                    variant={scaleVariants}
+                    whileInView={scaleVariants.whileInView}
+                    className="app__header-circles-level2"
+                >
+                    {experienceLeftSide.map((item, index) => (
+                        <div className="circle-cmp app__flex" key={index} >
+                            <img src={item} alt="cc" />
+                        </div>
+                    ))}
+                </motion.div>
+
+
             </motion.div>
 
-            {/* **************************************************************** */}
-            {/* **************************************************************** */}
-            {/* **************************************************************** */}
 
             <motion.div
                 onMouseLeave={handleLeave}
@@ -88,24 +98,15 @@ const Header = ({ isDark }) => {
                 className="app__header-img app__flex"
                 data-tip={professionalInfo}
             >
-                <img src={images.profile1} alt="" className="app__header-img-class" />
 
-                {/* <motion.img
-                    whileInView={{ scale: [0, 1] }}
-                    transition={{ duration: .5, ease: "easeInOut" }}
-                    src={`${isDark ? images.circle2 : images.circle3}`}
-                    alt="cx"
-                    className="overlay_circle"
-                /> */}
+
+                <img src={images.osama2} alt="" className="app__header-img-class" />
 
                 <motion.div
                     whileInView={{ scale: [0, 1] }}
                     transition={{ duration: .5, ease: "easeInOut" }}
-                    // src={`${isDark ? images.circle2 : images.circle3}`}
-                    // alt="cx"
                     className="overlay_circle"
                 />
-
                 {toolTip &&
                     <ReactTooltip
                         effect="solid"

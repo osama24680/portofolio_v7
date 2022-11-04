@@ -1,5 +1,5 @@
 
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import "./Gallery.scss"
 import DesignesData from "../../Data/DesignesData"
 import { motion } from 'framer-motion'
@@ -12,14 +12,12 @@ const Gallery = () => {
     const [isShow, setIsShow] = useState(false)
     const [showPlus, seShowPlus] = useState(true)
     const [word, setWord] = useState("More Images...")
-    // const gallerySection = useRef()
 
 
     const showHideSites = (e) => {
         if (word === "More Images...") {
             setIsShow(true)
             setWord("Hide Images")
-            // window.scroll(0, rect.top)
         } else if (word === "Hide Images") {
             setIsShow(false)
             setWord("More Images...")

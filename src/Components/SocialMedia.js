@@ -42,7 +42,7 @@ const lightMode = [
     { name: "--itemsFilteredColorHover", code: "#3AA6EF" },
 ]
 
-const NavigationDots = ({ isDark }) => {
+const NavigationDots = () => {
     const [Dark, setDark] = useState(true)
     function handleDarkModeButton() {
         let darkCopy = !Dark;
