@@ -36,10 +36,10 @@ const Testimonial = () => {
                     <div className="app__testimonial-item app__flex">
                         <img src={urlFor(element.imgurl)} alt="" />
                         <div className="app__testimonial-content">
-                            <p className="p-text">{element.feedback}</p>
+                            <p className="p-text"><i>"{element.feedback}"</i></p>
                             <div>
                                 <h4 className="bold-text">{element.name}</h4>
-                                <h5 className=""><a href={element.review_link}>`"${element.platform}"`</a></h5>
+                                <h5 className=""><a href={element.review_link}>{element.platform}</a></h5>
                             </div>
                         </div>
                     </div>
