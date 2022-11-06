@@ -16,10 +16,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 60px;
 }
 
 .app__navbar-logo img {
-  width: 150px;
+  width: 100%;
 }
 
 @media screen and (min-width: 2000px) {

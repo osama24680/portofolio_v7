@@ -24,6 +24,7 @@ import about04 from '../assets/about04.png';
 import profile1 from '../assets/profile1.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 import circle2 from "../assets/circle2.png"
 import circle3 from "../assets/circle3.png"
 
@@ -55,6 +56,7 @@ export default {
     about04,
     circle,
     logo,
+    logo2,
     profile1,
     nextjs,
     circle2,
