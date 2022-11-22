@@ -5,7 +5,7 @@ import AppWrap from '../../Wrapper/AppWrap'
 import MotionWrap from '../../Wrapper/MotionWrap'
 import { urlFor, client } from "../../client"
 import "./Work.scss"
-let categories = ["UI/UX", "JavaScript", "OOP", "jQuery", "React.JS", "Next.JS", "All"]
+let categories = ["HTML/CSS", "JavaScript", "OOP", "jQuery", "React.JS", "Next.JS", "All"]
 const Work = () => {
 
     const [works, setWorks] = useState([]);
