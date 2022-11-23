@@ -28,7 +28,9 @@ department , it's the second year to me at the college. I was so interested abou
 specially the front-end career so I started to learn it for over than a year and I have accomplished 
 many websites which are real and virtual and I am so excited to start work with you`
 
-let experienceLeftSide = [images.typescript, images.firebase, images.sass]
+// let experienceLeftSide = [images.typescript, images.firebase, images.sass]
+let experienceLeftSide = [ images.firebase, images.sass]
+
 let experience = [images.nextjs,images.react, images.graphql,  images.redux]
 
 const Header = ({ isDark }) => {
